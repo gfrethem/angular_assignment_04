@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="twitterGenerator">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Twitters</title>
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="/assets/scripts/app.min.js"></script>
+    <link rel="stylesheet" href="/assets/views/stylesheet.css">
 </head>
 <body>
-TEST
+<div ng-controller="MainController">
+<button ng-click="kickOff(10)">Generate</button>
+    <ul>
+        <li ng-repeat="handle in handleList track by $index">{{handle}}</li>
+    </ul>
+
+</div>
+
 </body>
 </html>
