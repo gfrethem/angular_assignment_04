@@ -29,7 +29,7 @@ $scope.handleList = [];
     };
 
     function generateHandle() {
-        $scope.handle = $scope.adjsList[randomNumber(0, $scope.adjsList.length)] + $scope.nounList[randomNumber(0, $scope.nounList.length)];
+        $scope.handle = $scope.adjsList[randomNumber(0, $scope.adjsList.length-1)] + $scope.nounList[randomNumber(0, $scope.nounList.length-1)];
         return $scope.handle;
     }
 

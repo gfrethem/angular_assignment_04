@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="/assets/views/stylesheet.css">
 </head>
 <body>
+<h1>Chalupa Batman Approved</h1>
 <div ng-controller="MainController">
 <button ng-click="kickOff(10)">Generate</button>
     <ul>
-        <li ng-repeat="handle in handleList track by $index">{{handle}}</li>
+        <li ng-repeat="handle in handleList track by $index"><a href="http://www.twitter.com/{{handle}}" target="_blank">@{{handle}}</a></li>
     </ul>
 
 </div>
